@@ -1,0 +1,17 @@
+void generateCombinations(String current, int n, List<String> characters) {
+  if (current.length == n) {
+    print(current);
+    return;
+  }
+
+  for (String ch in characters) {
+    generateCombinations(current + ch, n, characters);
+  }
+}
+
+void main() {
+  int n = 3; // Jumlah karakter
+  List<String> characters = ['a', 'b', 'c']; // Set karakter
+
+  generateCombinations("", n, characters);
+}
