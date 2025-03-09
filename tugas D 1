@@ -12,3 +12,7 @@ return x;
 void main(){
 
 stdout.write("N= ");
+
+int nint.parse(stdin.readLineSync()!);
+print("Hasil=$(faktorial(n)}");
+}
