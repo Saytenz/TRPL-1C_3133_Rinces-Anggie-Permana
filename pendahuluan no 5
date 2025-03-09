@@ -1,0 +1,13 @@
+int fibonacciTail(int n,[Int a=0,
+int b=1]){
+ if (n==0){
+   return a;
+} else if(n==1){
+  return b;
+} else {
+  return fibonacciTail(n-1,b,a+b);
+  }
+}
+void main(){
+ print(fibonacciTail(6));// hasil 8
+}
