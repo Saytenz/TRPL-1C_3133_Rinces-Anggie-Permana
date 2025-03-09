@@ -1,1 +1,15 @@
+void hanoi(int n, String from, String to, String aux) {
+  if (n == 1) {
+    print("Pindahkan disc 1 dari pasak $from ke pasak $to");
+    return;
+  }
 
+  hanoi(n - 1, from, aux, to);
+  print("Pindahkan disc $n dari pasak $from ke pasak $to");
+  hanoi(n - 1, aux, to, from);
+}
+
+void main() {
+  int n = 3; // Jumlah cakram
+  hanoi(n, 'A', 'C', 'B');
+}
