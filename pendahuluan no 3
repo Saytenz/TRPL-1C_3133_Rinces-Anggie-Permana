@@ -1,13 +1,15 @@
 int fibonacci(int n) {
-if (n<= 0){
-throw Argument Error("Input harus lebih dari 0");
-
-}else if(n==1){
-return 0;
-}else if (n== z){
-return 1;
-}else{
-return fibonacci(n-1)
-fibonacci(n-2;
+  if (n <= 0) {
+    throw ArgumentError("Input harus lebih dari 0");
+  } else if (n == 1) {
+    return 0; // Fibonacci ke-1 adalah 0
+  } else if (n == 2) {
+    return 1; // Fibonacci ke-2 adalah 1
+  } else {
+    return fibonacci(n - 1) + fibonacci(n - 2); // Rekursi
+  }
 }
+
+void main() {
+  print(fibonacci(5)); // Output: 3
 }
